@@ -18,6 +18,10 @@ const routes: Routes = [
         path: 'feature1',
         loadChildren: () => import('./modules/feature1/feature1.module').then((m) => m.Feature1Module),
       },
+      {
+        path: 'feature2',
+        loadChildren: () => import('./modules/feature2/feature2.module').then((m) => m.Feature2Module),
+      },
     ],
   },
   { path: '**', redirectTo: 'home' },
